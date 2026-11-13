@@ -1,1 +1,60 @@
 
+<div class="game-section">
+  <h2>🎮 VUTHA TOP UP</h2>
+
+  <div class="game-card active">
+    <h3>🔥 Free Fire Cambodia</h3>
+    <p class="available">🟢 កំពុងដំណើរការ</p>
+    <button onclick="openGame('freefire')">
+      Top Up Now
+    </button>
+  </div>
+
+  <div id="other-games">
+    <h3>ហ្គេមផ្សេងៗ</h3>
+    <p class="disabled">🔴 បិទជាបណ្ដោះអាសន្ន</p>
+  </div>
+</div>
+
+<script>
+function openGame(game) {
+  if (game === "freefire") {
+    window.location.href = "freefire.html";
+  }
+}
+</script>
+
+<style>
+.game-section {
+  text-align: center;
+  padding: 20px;
+  background: #101827;
+  color: white;
+  border-radius: 15px;
+}
+
+.game-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.available {
+  color: #22c55e;
+}
+
+.disabled {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+button {
+  background: #f59e0b;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+</style>
+
